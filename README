@@ -1,0 +1,11 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1618
+
+Color Scheme helper
+
+This just highlights the highlighting groups of the color scheme you are
+editing in the current buffer -- so that you can see what you are doing.
+
+:CShelper   - Do 'color g:colors_name' of the file in the buffer, then do CShelperHL
+
+:CShelperHL - update highlight from current buffer
+
