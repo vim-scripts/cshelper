@@ -2,8 +2,8 @@
 "This just highlights the highlighting groups of the colorscheme you are
 "editing in the current buffer -- so that you can see what you are doing.
 "
-"Version 1.3
-"Last change July 28 2006
+"Version 1.4
+"Last change July 30 2006
 "Walter Hutchins
 "
 ":CShelper   - Do color scheme file in buffer, then do CShelperHL
@@ -57,7 +57,8 @@ silent g/^\s*"/d
 silent g/^\s*[h][i]\S*\s*clear/d
 silent g/^\s*[h][i]\S*\s*link/d
 silent g/^\s*[h][i].*\(\n\)\s\+\(term\|cterm\|gui\)/j
-silent g/^\s*[^h][^i]/d
+silent %s/^\s\+//
+silent g/^[^h][^i]/d
 %s/^\s*[h][i]\S*\s*//e
 " precede syntax command
 % substitute /\s\+/ /g
